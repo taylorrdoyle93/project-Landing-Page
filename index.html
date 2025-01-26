@@ -1,91 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" lang="zxx">
 <head>
 	<meta charset="utf-8">
-	<title>code vault</title>
-	<style>
-		table, th, td {
-			border: 1px solid gray;
-		}
-	</style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Code Vault</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="styles/normalize-fwd.css">
 	<link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body id="top">
 
 	<header class="header">
-		<p>code vault</p>
-		<nav class="navigation">
-			<ul>
-				<li><a href="index.html">home</a></li>
-				<li><a href="about-us.html">about</a></li>
-                <li><a href="projects.html">projects</a></li>
-				<li><a href="contact.html">contact</a></li>
-			</ul>
-		</nav>
 
-	</header>
+        <div class="site-header">
 
-    <main>
-        <h1>code vault</h1>
-            <section class="main">
+		    <nav class="navigation" id="navigation"></nav>
+                <!--<a href="#" class="site-name">Code Vault</a>-->
+
+			    <ul class ="nav-menu" id="header-menu">
+				    <li><a href="index.html">home</a></li>
+				    <li><a href="about-us.html">about</a></li>
+                    <li><a href="projects.html">projects</a></li>
+				    <li><a href="contact.html">contact</a></li>
+			    </ul>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+            <section class="hero">
                 <div class="background-image">
                     <link rel="stylesheet" href="styles.css">
-                    <h2>hi, I'm Taylor, your friendly neighbourhood Web Developer.</h2>
-                    <h2>Welcome to the code vault.</h2>
+                    <h1 class="taylor">Hi, I'm Taylor, your friendly neighbourhood Web Developer.<br>Welcome to the Code Vault.</h1>
                 </div>
             </section>
 
             <section class="about-me">
                 <h2>About Me</h2>
-                    <p>I'm an aspiring front end web developer currently attending BCIT.<br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p class="about-text">I'm an aspiring front end web developer currently attending BCIT. I'm looking forward to learning more and growing as a developer during my time in this program!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
             </section>
 
-            <section class="projects">
-                <h2>recent projects</h2>
-                     <div class="projects-flex">
-                         <div>Country Website</div>
-                         <div>Shopify</div>
-                         <div>Freelance Work</div>
-                    </div>       
+            <section>
+                <div class="dropdown">
+                    <button class="dropbtn">Recent Projects</button>
+                        <div class="dropdown-content">                      
+                            <a class="country-website" href="#">Country Website</a>                      
+                            <a class="shopify" href="#">Shopify</a>                     
+                            <a class="mindset" href="#">Mindset</a>
+                        </div>       
+                </div>
             </section>
 
-            <section class="testimonials">
-                <h2>What past clients Have to say</h2>
-                    <div class="testimonials-flex">
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate placeat facilis cumque saepe unde blanditiis exercitationem neque perspiciatis accusantium consequatur, repellendus nesciunt adipisci delectus dolor sit dolores quo autem voluptas?</p>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum culpa molestiae aperiam ipsa! Reiciendis exercitationem ea nesciunt sunt corporis non ducimus ipsam deserunt aut, similique placeat quos nobis suscipit minima?</p>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias repellat deserunt placeat perspiciatis delectus asperiores fugiat suscipit excepturi et consequuntur expedita quos debitis perferendis, odio tempore ad corrupti commodi illo!</p>
-                        </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam obcaecati exercitationem. Provident, magni fuga. At voluptate commodi maiores ab, totam et temporibus dolores eum doloribus dolorem alias distinctio sed.</p>
-                        </div>
-                    </div>
-            </section>
-
-            <section class="contact">
-                <h2>Like what you see?<br>Lets connect!</h2>
-                <ul>
-                    <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="https://ca.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-            </section>
     </main>
 
-	<footer>
+	<footer class="site-footer">
 		<address>
-			BCIT Downtown Campus<br>
-			555 Seymour Street<br>
-			Vancouver, BC V6B 3H6<br>
+			<p class="footer-info">&copy; Taylor Doyle 2025.</p>
 		</address>
 	</footer>
 

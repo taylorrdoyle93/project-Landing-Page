@@ -1,16 +1,253 @@
-body, html {
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+# Base
+    - Typography
+	- Elements
+	- Links
+# Components
+    - Header
+	- Main
+        -About Me
+        -Projects
+        -contact
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+/* Typography
+--------------------------------------------- */
+body {
+    
+    font-family: "Exo", serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #14140c;
+    background-color: #f5d5e0;
+    text-align:left;
+}
+
+h1 {
+	color: #f5d5e0;
+    text-align:left; 
+    padding: 5rem 0 2rem 3rem;
+    display: block;
+    text-align: left;
+    font-size: 50px;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "raleway", serif;
+	margin: .5em 0;
+	font-size: 4rem;
+}
+
+p {
+    display: block;
+    text-align: left;
+    margin: 1.5em 0;
+    padding: 0 2.5em 0 2.5em;
+}
+
+
+/* Elements
+--------------------------------------------- */
+
+ul,
+li {
+	margin: 1em 0;
+	padding: 0 0 0 2.5em;
+}
+
+/* Links
+--------------------------------------------- */
+
+a,
+a:visited { 
+	color: #f5d5e0;
+}
+
+a:hover,
+a:focus {
+	color: #e012e6;
+}
+
+a:focus {
+	outline: 1px #f5d5e0;
+}
+
+a:active {
+	color: #f5d5e0;
+	background-color: #141530;
+}
+
+/* Header
+--------------------------------------------- */
+
+.site-header {
+    display: inline;
+    justify-content: center;
+    background-color: #14140c;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+}
+  
+  header li {
+    font-size: 2rem;
     margin: 0;
-    padding: 0;
-    height: 100%;
+    line-height: 60px;
+    display: inline-block;
+  }
+
+.navigation {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.navigation ul {
+    display: inline;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+    justify-content: space-around;
+	background-color: #141530;
 }
 
 .background-image {
-   background-image: url();
+   background-image: url("../media/galaxy-image.jpg");
    background-size: cover;
    background-position: center;
-   height: 100vh;
+   height: 60vh;
    display: flex;
    justify-content: center;
    align-items: center;
-   /*color: azure; *Text color ontop of image*/
+}
+
+@media (min-width: 31.25em) {
+
+    .hero {
+        display: block;
+        text-align: left;
+        font-size: 80px;
+    }
+
+	.header {
+		position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000;
+	}
+
+	.navigation {
+		padding: 0 1rem;
+		flex: 1 1 auto;
+        position: relative;
+        top: right;
+	}
+
+	.navigation ul {
+		justify-content: space-around;
+	}
+
+	.navigation a {
+		font-size: 1.25rem;
+		line-height: 4.5rem;
+		padding: 0 1rem;
+	}
+
+}
+
+/* About me
+---------------------------------------*/
+.about-me {
+	text-align: center;
+    padding-top: 2em;
+	margin-bottom: 5rem;
+}
+
+/* Projects Button Styling 
+/**/
+/* a lot of what is below is from w3schools.
+/* I could not have made this dropdown without it, and in fact 
+/*I couldn't fully figure out how to style it the way that I had wanted.
+ link: https://www.w3schools.com/howto/howto_css_dropdown.asp
+---------------------------------------*/
+
+
+@media (min-width: 31.25rem) {
+    .dropdown {
+	    text-align: center;
+	    margin-bottom: 3rem;
+        color:#14140c;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .dropbtn {
+        background-color: #14140c;
+        color: #f5d5e0;
+        padding: 48px;
+        font-size: 48px;
+        border: none;
+    }
+
+    .dropdown-content a {
+        color: #14140c;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f5d5e0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content a:hover {
+        color: #e012e6;
+    }
+}
+
+/* Footer
+--------------------------------------------*/
+
+.site-footer {
+    text-align: center;
+    background-color:#14140c;
+    color:#f5d5e0;
+    padding: 2rem;
+}
+    
+.footer-info {
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (min-width: 31.25rem) {
+
+    .footer-info {
+        font-size: 16px;
+    }
 }
